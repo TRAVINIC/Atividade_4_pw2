@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "cbf69e10-a9f2-4775-b3c8-ffdb96941d35",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212239"
+	},
+	"item": [
+		{
+			"name": "especialidade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cod_especialidade",
+							"value": "codigo da especialidade",
+							"type": "text"
+						},
+						{
+							"key": "nome_especialidade",
+							"value": "nome da especialidade",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/especialidade/inserir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"especialidade",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "medico",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_medico",
+							"value": "nome medico",
+							"type": "text"
+						},
+						{
+							"key": "email_medico",
+							"value": "email medico",
+							"type": "text"
+						},
+						{
+							"key": "telefone_medico",
+							"value": "telefone medico",
+							"type": "text"
+						},
+						{
+							"key": "celular_medico",
+							"value": "celular medico",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/etec/Downloads/smartphone-g10e23e903_640.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url_base}}/medico/inserir",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"medico",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

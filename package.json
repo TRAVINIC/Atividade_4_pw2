@@ -1,0 +1,20 @@
+{
+  "name": "atividade_4_pw2",
+  "version": "1.0.0",
+  "description": "Atividade 4 pw2",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "vinicius",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.4.2",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.9"
+  }
+}
